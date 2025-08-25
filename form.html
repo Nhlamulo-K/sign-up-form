@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="image-container"></div>
+    <div class="form-container">
+        <p>
+            Offering class to people who want to learn how to sew and crochet.
+        </p>
+        <form action="https://httpbin.org/post" method="post">
+            <div>
+                <label for="first_name">FIRST NAME<span class="required">*</span></label>
+                <label for="second_name">SECOND NAME<span class="required">*</span></label>
+            </div>
+
+            <div>
+                <input type="text" id="first_name" name="first_name" class="line-input" required>
+                <input type="text" id="second_name" name="second_name" class="line-input" required>
+            </div>
+
+            <div>
+                <label for="email">EMAIL<span class="required">*</span></label>
+                <label for="number">PHONE NUMBER<span class="required">*</span></label>
+            </div>
+
+            <div>
+                <input type="text" id="email" name="email" class="line-input" required>
+                <input type="tel" id="number" name="number" class="line-input" required placeholder="e.g. 0712345678">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
