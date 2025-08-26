@@ -7,32 +7,44 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="image-container"></div>
+    <div class="image-container">
+        <img src="https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    </div>
+
     <div class="form-container">
+
         <p>
-            Offering class to people who want to learn how to sew and crochet.
+        Offering class to people who want to learn how to sew and crochet.
         </p>
+        
         <form action="https://httpbin.org/post" method="post">
-            <div>
-                <label for="first_name">FIRST NAME<span class="required">*</span></label>
-                <label for="second_name">SECOND NAME<span class="required">*</span></label>
-            </div>
+            <div class="form">
+                <div class="name">
+                    <label for="first_name">FIRST NAME<span class="required">*</span></label>
+                    <label for="second_name">SECOND NAME<span class="required">*</span></label>
+                </div>
 
-            <div>
-                <input type="text" id="first_name" name="first_name" class="line-input" required>
-                <input type="text" id="second_name" name="second_name" class="line-input" required>
-            </div>
+                <div class="nameInput">
+                    <input type="text" id="first_name" name="first_name" class="line-input" required>
+                    <input type="text" id="second_name" name="second_name" class="line-input" required>
+                </div>
 
-            <div>
-                <label for="email">EMAIL<span class="required">*</span></label>
-                <label for="number">PHONE NUMBER<span class="required">*</span></label>
-            </div>
+                <div class="details">
+                    <label for="email">EMAIL<span class="required">*</span></label>
+                    <label for="number">PHONE NUMBER<span class="required">*</span></label>
+                </div>
 
-            <div>
-                <input type="text" id="email" name="email" class="line-input" required>
-                <input type="tel" id="number" name="number" class="line-input" required placeholder="e.g. 0712345678">
+                <div class="inputDetails">
+                    <input type="text" id="email" name="email" class="line-input" required>
+                    <input type="tel" id="number" name="number" class="line-input" required placeholder="e.g. 0712345678">
+                </div>
+
+                <button>Create Account</button>
             </div>
         </form>
+
+        <p>Already have an account? <button>Log in</button></p>
+
     </div>
 </body>
 </html>
