@@ -1,2 +1,2 @@
 #About
-It is a sign up form/page.
+It is a mock sign up form/page.
